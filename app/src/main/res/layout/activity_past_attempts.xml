@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PastAttempts">
+
+    <ListView
+        android:id="@+id/pastAttemptList"
+        android:layout_width="371dp"
+        android:layout_height="401dp"
+        android:layout_marginBottom="252dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/sortBySpinner"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:contentDescription="sortOptions"
+        app:layout_constraintBottom_toTopOf="@+id/pastAttemptList"
+        app:layout_constraintEnd_toEndOf="@+id/pastAttemptList" />
+
+    <TextView
+        android:id="@+id/sortByTextView"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Sort by:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/pastAttemptList"
+        app:layout_constraintEnd_toStartOf="@+id/sortBySpinner" />
+
+    <Button
+        android:id="@+id/bBackAttempts"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/pastAttemptList"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/pastAttemptList"
+        app:layout_constraintTop_toBottomOf="@+id/pastAttemptList" />
+</androidx.constraintlayout.widget.ConstraintLayout>

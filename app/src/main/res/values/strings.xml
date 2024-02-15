@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Selective High School Preparation Test</string>
+    <string name="resultText"><u>Results:</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="sortby">
+        <item>Date</item>
+        <item>Points</item>
+        <item>Quiz Type</item>
+    </string-array>
+</resources>
